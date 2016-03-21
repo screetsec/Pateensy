@@ -9,7 +9,7 @@ Tutorial >> ( https://www.pjrc.com/teensy/teensyduino.html ) , Youtube.com or Go
 PAYLOAD : 
 
 
-WINDOWS SCREEN ROTATION ( PRANK ) YOUR FRIENDS :> 
+Dont fuck it up in notepad ( ASCII ) >< ( PRANK ) YOUR FRIENDS :> 
 
 
 @ Edo -m- you can contact me in screetsec@gmail.com
