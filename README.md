@@ -4,26 +4,26 @@ This script  was tested on an Teensy 3.2 and Windows. To run this script , simpl
 You can buy Teensy >> ( https://www.pjrc.com )
 
 
-# PaensyLib By Ozuru
+## PaensyLib By Ozuru
 You will need the Teensy USB Development Board and Teensyduino. The PJRC website has a very easy to use guide on getting Teensyduino setup.
 
 Once Teensyduino is installed and working, place the PaensyLib folder inside your Arduino\libraries. Arduino is installed in your Program Files (x86 if 64 bit) directory by default. To utilize Paensy, simply include the library in your code:
 
-( #include <paensy.h> )
+    #include <paensy.h>
 
 
-#Tutorial for use teensy
+## Tutorial for use teensy
 
 1. ( https://www.pjrc.com/teensy/teensyduino.html ) 
 2. ( www.irongeek.com/i.php?page=security/programmable-hid-usb-keystroke-dongle )
 
-#Another Payload you can find 
+## Another Payload you can find 
 1. ( https://www.trustedsec.com/social-engineer-toolkit/ )
 2. ( www.irongeek.com/i.php?page=security/programmable-hid-usb-keystroke-dongle )
 3. ( http://malware.cat/?p=89 ) 
 4. ( https://github.com/Ozuru/Paensy/tree/master/Payloads )
 
-#Contact 
+## Contact 
 
 @ Edo -m- you can contact me in screetsec@gmail.com 
 thanks 
