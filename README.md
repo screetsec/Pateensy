@@ -1,8 +1,9 @@
 # Payload-Teensy ( BadUSB ) Like a Rubber Ducky 
 
 
-This script  was tested on an Teensy 3.2. To run this script , simply download the repository and extract  in your pc or lapt. Paste the the payload script into  your Arduino  . So this is  all of payload for teensy ( sketch ) 
+This script  was tested on an Teensy 3.2 and Windows. To run this script , simply download the repository and extract  in your pc or lapt. Paste the the payload script into  your Arduino  . So this is  all of payload for teensy ( sketch ) 
 You can buy Teensy >> ( https://www.pjrc.com )
+
 
 #Tutorial for use teensy
 
@@ -19,3 +20,5 @@ You can buy Teensy >> ( https://www.pjrc.com )
 
 @ Edo -m- you can contact me in screetsec@gmail.com 
 thanks 
+
+#THE PAYLOAD FOR WINDOWS
