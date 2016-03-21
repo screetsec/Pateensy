@@ -1,8 +1,15 @@
 # Payload-Teensy ( BadUSB ) Like a Rubber Ducky 
 
-
 This script  was tested on an Teensy 3.2 and Windows. To run this script , simply download the repository and extract  in your pc or lapt. Paste the the payload script into  your Arduino  . So this is  all of payload for teensy ( sketch ) 
 You can buy Teensy >> ( https://www.pjrc.com )
+
+
+# PaensyLib By Ozuru
+You will need the Teensy USB Development Board and Teensyduino. The PJRC website has a very easy to use guide on getting Teensyduino setup.
+
+Once Teensyduino is installed and working, place the PaensyLib folder inside your Arduino\libraries. Arduino is installed in your Program Files (x86 if 64 bit) directory by default. To utilize Paensy, simply include the library in your code:
+
+#include <paensy.h>
 
 
 #Tutorial for use teensy
