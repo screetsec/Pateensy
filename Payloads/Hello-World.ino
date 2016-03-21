@@ -9,7 +9,7 @@ Tutorial >> ( https://www.pjrc.com/teensy/teensyduino.html ) , Youtube.com or Go
 PAYLOAD : 
 
 
-OPEN NOTEPAD IN WRITE HELLO WORLD
+OPEN NOTEPAD AND WRITE HELLO WORLD
 
 
 @ Edo -m- you can contact me in screetsec@gmail.com
