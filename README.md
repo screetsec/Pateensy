@@ -11,6 +11,14 @@ Once Teensyduino is installed and working, place the PaensyLib folder inside you
 
     #include <paensy.h>
 
+List payload paensy
+1. BadUSB_AddAdmin
+2. BadUSB_DownloadExecute
+3. BadUSB_FacebookPost
+4. BadUSB_HideWindow
+5. BadUSB_LockYourComputer (fix with me)
+
+If list payload 1,2,3,4 not work you can use Kautilya ( is the best for execute backdoor or powershell )
 
 ## Tutorial for use teensy
 
