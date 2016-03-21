@@ -9,7 +9,7 @@ You will need the Teensy USB Development Board and Teensyduino. The PJRC website
 
 Once Teensyduino is installed and working, place the PaensyLib folder inside your Arduino\libraries. Arduino is installed in your Program Files (x86 if 64 bit) directory by default. To utilize Paensy, simply include the library in your code:
 
-#include <paensy.h>
+( #include <paensy.h> )
 
 
 #Tutorial for use teensy
@@ -28,4 +28,8 @@ Once Teensyduino is installed and working, place the PaensyLib folder inside you
 @ Edo -m- you can contact me in screetsec@gmail.com 
 thanks 
 
+Ozuru > https://github.com/Ozuru/
+
 #THE PAYLOAD FOR WINDOWS
+
+
