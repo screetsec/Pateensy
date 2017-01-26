@@ -30,6 +30,7 @@ If list payload 1,2,3,4 not work you can use Kautilya ( is the best for execute 
 2. ( www.irongeek.com/i.php?page=security/programmable-hid-usb-keystroke-dongle )
 3. ( http://malware.cat/?p=89 ) 
 4. ( https://github.com/Ozuru/Paensy/tree/master/Payloads )
+5. ( https://github.com/kbeflo/Paensy/tree/master/Payloads )
 
 ## Contact 
 
@@ -37,6 +38,8 @@ If list payload 1,2,3,4 not work you can use Kautilya ( is the best for execute 
 thanks 
 
 Ozuru > https://github.com/Ozuru/
+
+Kleo Bercero - [@kbeflo](https://twitter.com/kbeflo) - [My website](https://kerberos.me/)
 
 #THE PAYLOAD FOR WINDOWS
 

